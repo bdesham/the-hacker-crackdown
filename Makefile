@@ -1,12 +1,12 @@
 source_files = \
-	preface.html \
-	chronology.html \
-	introduction.html \
-	part1.html \
-	part2.html \
-	part3.html \
-	part4.html \
-	afterword.html
+	source/preface.html \
+	source/chronology.html \
+	source/introduction.html \
+	source/part1.html \
+	source/part2.html \
+	source/part3.html \
+	source/part4.html \
+	source/afterword.html
 
 metadata = \
 	"--metadata=title:The Hacker Crackdown" \
