@@ -1,0 +1,34 @@
+@namespace epub url(http://www.idpf.org/2007/ops);
+
+section[epub|type=titlepage] * {
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	text-indent: 0;
+}
+
+h1 {
+	/* Hide the extra title that appears at the beginning of the first chapter */
+	display: none;
+}
+
+h1.title {
+	display: block;
+}
+
+h2 {
+	break-before: page;
+}
+
+section#chronology-of-the-hacker-crackdown h3 {
+	font-size: 1rem;
+}
+
+p {
+	margin: 0;
+	text-indent: 1.5rem;
+}
+
+section > p:first-of-type {
+	text-indent: 0;
+}

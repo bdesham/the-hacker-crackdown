@@ -1,0 +1,21 @@
+body {
+	max-width: 35rem;
+	margin: 0 auto;
+}
+
+header {
+	text-align: center;
+}
+
+header * {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	margin-top: 6rem;
+}
+
+h3.chronology-year {
+	font-size: 1rem;
+}
