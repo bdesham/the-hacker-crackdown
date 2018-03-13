@@ -16,6 +16,8 @@ metadata = \
 	"--metadata=lang:en-US"
 
 
+all: html epub markdown
+
 html:
 	pandoc --output=The_Hacker_Crackdown.html --standalone \
 		--css=styles/common.css --css=styles/html.css \
