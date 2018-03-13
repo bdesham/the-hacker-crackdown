@@ -32,3 +32,10 @@ p {
 section > p:first-of-type {
 	text-indent: 0;
 }
+
+#e911-document .header p,
+#e911-document .footer p {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-indent: 0;
+}

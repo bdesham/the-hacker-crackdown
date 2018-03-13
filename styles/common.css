@@ -15,3 +15,14 @@ body {
 .author {
 	font-size: 1.5rem;
 }
+
+hr {
+	border: none;
+	margin: 3rem auto;
+	text-align: center;
+}
+
+hr::before {
+	content: "•••";
+	letter-spacing: 2rem;
+}
