@@ -29,7 +29,8 @@ p {
 	text-indent: 1.5rem;
 }
 
-section > p:first-of-type {
+section > p:first-of-type,
+hr + p {
 	text-indent: 0;
 }
 
