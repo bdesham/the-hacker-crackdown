@@ -14,6 +14,12 @@ body {
 
 .author {
 	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+.date {
+	font-weight: normal;
+	font-size: 1rem;
 }
 
 hr {

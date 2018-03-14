@@ -16,6 +16,10 @@ h2 {
 	margin-top: 6rem;
 }
 
+h2.author {
+	margin-top: 1rem;
+}
+
 h3.chronology-year {
 	font-size: 1rem;
 }
