@@ -2,6 +2,13 @@
 
 An ebook of _The Hacker Crackdown: Law and Disorder on the Electronic Frontier_ by Bruce Sterling.
 
+## How to get it
+
+Navigate to [the latest release][latest] and choose a format to download: EPUB, HTML, or Markdown. If you would like a different format, see [“Building the ebook yourself”][building].
+
+[latest]: https://github.com/bdesham/the-hacker-crackdown/releases/latest
+[building]: #building-the-ebook-yourself
+
 ## Notes on the text
 
 There are already multiple copies of this book floating around the internet. Why am I adding yet another one? None of the existing editions had good typography (meaning curly quotes and real em dashes and italics). Plus, by releasing a version that is specifically designed to be ingested by [Pandoc], I’m making it easier to convert the book to Markdown, PDF, DOCX, or any other format that people want.
@@ -21,8 +28,10 @@ Clone this repository and navigate to your clone on the command line. Then you c
 
 - `make html` to produce `book.html`, the book as a single HTML page;
 - `make epub` to produce `book.epub`, the book in EPUB format;
-- `make markdown` to produce `book.md`, the book in Markdown format with Pandoc’s standard extensions (a YAML metadata header, attributes, etc.); or
+- `make markdown` to produce `book.md`, the book in Markdown format with Pandoc’s extensions; or
 - `make all` for all of the above.
+
+Pandoc supports many more formats than just these three. If you would like the book in a different format, open the Makefile, copy one of the `pandoc` invocations, and tweak it as necessary.
 
 ## License
 
