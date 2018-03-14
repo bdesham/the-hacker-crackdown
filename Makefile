@@ -24,7 +24,7 @@ html:
 		$(source_files) $(metadata)
 
 epub:
-	pandoc --output=The_Hacker_Crackdown.epub --standalone --toc-depth=2 \
+	pandoc --output=The_Hacker_Crackdown.epub --toc-depth=2 \
 		--css=styles/common.css --css=styles/epub.css \
 		$(source_files) $(metadata)
 
