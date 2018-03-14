@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -o errexit -o verbose
+
+PROJECT_NAME=the-hacker-crackdown
+
+if [[ -z "$TRAVIS_TAG" ]]; then
+	echo "This is not a release build."
+elif [[ -z "$GITHUB_TOKEN" ]]; then
+	echo "The GITHUB_TOKEN environment variable is not set!"
+	exit 1
+else
+	for FILE in The_Hacker_Crackdown.*; do
+		NEW_NAME=$(echo "$FILE" | sed -Ee "s/(.+)\.(.+)/\1.$TRAVIS_TAG.\2/")
+		echo "Attaching $FILE to $TRAVIS_TAG as $NEW_NAME..."
+		github-release upload \
+			--token "$GITHUB_TOKEN" \
+			--owner bdesham \
+			--repo "$PROJECT_NAME" \
+			--tag "$TRAVIS_TAG" \
+			--file "$FILE" \
+			--name "$NEW_NAME"
+	done
+fi

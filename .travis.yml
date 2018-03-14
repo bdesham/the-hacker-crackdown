@@ -1,0 +1,28 @@
+addons:
+  apt:
+    packages:
+    - pandoc
+
+cache:
+  directories:
+  - $HOME/.local/bin
+
+env:
+  global:
+  - secure: "cbj+7/HihgDyDMoxFCgb4EYBbuK0MjposV6e5k2ScDWeG0UknQnFBkaQmq7+bGaZ9Y4kVLCdtVZeNtPA1BQcVPIRKU+UPQeJm3w/elWPnUrdJEjfORNtHShlZG8z+jCstW+Yepkx49/4dbe6+9lCQUaoI1rpokupdmDF7RcCZJINgaC3mtX9HM7Dr8s8VHjOOqmwoBySLaUGlmxB4gdJl/P+w5KfYo7j4nv9Oi59yi6EmUk8KvwSYgLh46AxiBm0BpQNtaO9gy7OOC55Ia15JiNj3dcERWMm1zfLixwRN4H8TzfBtY9zRzyhHYBSzLEMKfvD50gJ4vnTS06IFrEwZpa0PBy+s7GZDZbauBoaVsVdCeNh3YIaNdKhqfR1u4kYyINVqpCgZpD0T3wAM27WmyHJHnW8OEAtcqMZk/nMsQmmZVwnwxwwPPQhA2BNkMSn7hXIQjkQ8KqFQj+Rx22mtHeFPWC7TClOS2CMjddGG3MzGjXRsKl5OU26cAomtF7/pGJxdPIvisADeGo1+x8Df1z/JgWBZRjekE5GXw7OuaKAf8ihdpJMga1bGtpNP+eNuEIK/KZKdx4yj7q2GEIouRaD7QqsghAzqFGG+qZ2kIUX35cxeQKOtH4z8Waxa59jhjGeQ7Z4drep3uz68i/vv16b6jIVYGpR6dtq+EowQj0="
+
+language: c
+
+os:
+- linux
+
+sudo: false
+
+before_install:
+- travis_scripts/install_github-release
+
+script:
+- make all
+
+after_success:
+- travis_scripts/attach_generated_files
