@@ -62,4 +62,9 @@ The scripts in the “travis_scripts” folder were adapted from scripts written
 
 ## Version history
 
-* v1 (2018-03-13): Initial release.
+See [the project’s Releases page][releases]. Releases are numbered with single integers: 1, 2, 3, and so on.
+
+GitHub provides an [Atom feed] of the releases.
+
+[releases]: https://github.com/bdesham/the-hacker-crackdown/releases
+[Atom feed]: https://github.com/bdesham/the-hacker-crackdown/releases.atom
