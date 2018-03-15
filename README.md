@@ -26,9 +26,9 @@ You will need to have [Pandoc] and GNU Make installed.
 
 Clone this repository and navigate to your clone on the command line. Then you can run
 
-- `make html` to produce `book.html`, the book as a single HTML page;
-- `make epub` to produce `book.epub`, the book in EPUB format;
-- `make markdown` to produce `book.md`, the book in Markdown format with Pandoc’s extensions; or
+- `make html` to produce `The_Hacker_Crackdown.html`, the book as a single HTML page;
+- `make epub` to produce `The_Hacker_Crackdown.epub`, the book in EPUB format;
+- `make markdown` to produce `The_Hacker_Crackdown.md`, the book in Markdown format with Pandoc’s extensions; or
 - `make all` for all of the above.
 
 Pandoc supports many more formats than just these three. If you would like the book in a different format, open the Makefile, copy one of the `pandoc` invocations, and tweak it as necessary.
