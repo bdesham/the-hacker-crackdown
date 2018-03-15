@@ -19,7 +19,7 @@ metadata = \
 all: html epub markdown
 
 html:
-	pandoc --to=html5 --output=The_Hacker_Crackdown.html --standalone \
+	pandoc --to=html5 --output=The_Hacker_Crackdown.html --self-contained \
 		--css=styles/common.css --css=styles/html.css \
 		$(source_files) $(metadata)
 
